@@ -24,13 +24,27 @@
     <h1>Book a consultation</h1>
     <p>Share a bit about your goals. I’ll reply within one business day.</p>
 
-   <form action="https://formspree.io/f/yourFormID" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="text" name="topic" placeholder="Consultation Topic" required>
-  <textarea name="message" placeholder="Brief description of your needs"></textarea>
-  <button type="submit">Book Consultation</button>
-</form>
+<form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="hidden" name="form-name" value="contact" />
+      <label>
+        Full name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Company (optional)
+        <input type="text" name="company" />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+
 
     <div class="contact-direct">
       <p><strong>Email:</strong> princehenryadusu@gmail.com</p>
@@ -51,4 +65,5 @@
 </body>
 
 </html>
+
 
